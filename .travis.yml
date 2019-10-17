@@ -1,0 +1,12 @@
+language: java
+jdk:
+ - openjdk9
+services:
+ - mongodb
+before_install:
+  - chmod +x mvnw
+deploy:
+ provider: heroku
+ api_key:
+   secure: e14cb4c7-11e6-4389-b9d9-6abb2cde2cad
+ app: azuladito
